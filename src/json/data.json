@@ -1,0 +1,56 @@
+[
+	{
+		"id": "800",
+		"name": "SAC",
+		"members": [
+			{
+				"name": "Saulo",
+				"id": 600,
+				"paused": false,
+				"online": true,
+				"status": "Disponível",
+				"time": "00:02:03"
+			},
+			{
+				"name": "Denis",
+				"id": 601,
+				"paused": true,
+				"online": true,
+				"status": "Pausa (Almoço)",
+				"time": "00:32:03"
+			},
+			{
+				"name": "Daniel",
+				"id": 602,
+				"paused": false,
+				"online": false,
+				"status": "Disponível",
+				"time": "00:00:00"
+			},
+			{
+				"name": "Daniel",
+				"id": 603,
+				"paused": false,
+				"online": false,
+				"status": "Disponível",
+				"time": "00:00:00"
+			},
+			{
+				"name": "Daniel",
+				"id": 604,
+				"paused": false,
+				"online": false,
+				"status": "Desconectado",
+				"time": "00:00:00"
+			},
+			{
+				"name": "Daniel",
+				"id": 605,
+				"paused": false,
+				"online": false,
+				"status": "Desconectado",
+				"time": "00:00:00"
+			}
+		]
+	}
+]
