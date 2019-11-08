@@ -6,7 +6,7 @@
         <v-col md="2" class="align-self-center">
           <v-img src="../assets/weon.png" width="145px" height="50px"></v-img>
         </v-col>
-        <v-col md="4" offset="2" class="d-flex justify-center" align-self="center">
+        <v-col md="4" offset="2" class="d-inline-flex">
           <v-text-field
             label="Buscar Contato"
             dark
