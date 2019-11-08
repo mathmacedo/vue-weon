@@ -67,14 +67,14 @@ export default {
       { title: "Filas Principais", icon: "mdi-view-dashboard" }
     ],
     items2: [
-      { title: "Filas", icon: "mdi-view-dashboard" },
-      { title: "Campanhas", icon: "mdi-view-dashboard" },
+      { title: "Filas", icon: "mdi-account-multiple" },
+      { title: "Campanhas", icon: "mdi-account-multiple" },
       { title: "Agentes", icon: "mdi-view-dashboard" }
     ],
     items3: [
-      { title: "Agentes", icon: "mdi-view-dashboard" },
-      { title: "Filas", icon: "mdi-view-dashboard" },
-      { title: "Campanhas", icon: "mdi-view-dashboard" },
+      { title: "Agentes", icon: "mdi-headphones-box" },
+      { title: "Filas", icon: "mdi-account-multiple" },
+      { title: "Campanhas", icon: "mdi-account-multiple" },
       { title: "Discadores", icon: "mdi-view-dashboard" }
     ],
     right: null
