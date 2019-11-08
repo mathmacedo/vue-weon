@@ -1,7 +1,7 @@
 
 <template>
-  <div class="grey darken-2" style="width: 100%">
-    <v-tabs background-color="grey darken-2" dark>
+  <div class="grey darken-3" style="width: 100%">
+    <v-tabs background-color="grey darken-3" dark>
       <v-tab>MONITOR</v-tab>
       <v-tab>GRÁFICO</v-tab>
       <v-tab>ATENDIMENTOS</v-tab>
@@ -9,8 +9,8 @@
 
     <v-row class="my-3 mx-3">
       <v-col>
-        <span style="color: white">{{this.statusDisponivel}}</span>
-        <span style="color: white">Disponível</span>
+        <span style="color: white" class="mr-2">{{this.statusDisponivel}}</span>
+        <span style="color: white" class="mr-2">Disponível</span>
         <v-progress-linear
           color="green darken-1"
           v-model="statusDisponivel"
@@ -18,8 +18,8 @@
         ></v-progress-linear>
       </v-col>
       <v-col>
-        <span style="color: white">{{this.statusAtendendo}}</span>
-        <span style="color: white">Atendendo</span>
+        <span style="color: white" class="mr-2">{{this.statusAtendendo}}</span>
+        <span style="color: white" class="mr-2">Atendendo</span>
         <v-progress-linear
           color="red darken-3"
           v-model="statusAtendendo"
@@ -27,8 +27,8 @@
         ></v-progress-linear>
       </v-col>
       <v-col>
-        <span style="color: white">{{this.statusPausa}}</span>
-        <span style="color: white">Pausa</span>
+        <span style="color: white" class="mr-2">{{this.statusPausa}}</span>
+        <span style="color: white" class="mr-2">Pausa</span>
         <v-progress-linear
           color="yellow darken-1"
           v-model="statusPausa"
@@ -36,8 +36,8 @@
         ></v-progress-linear>
       </v-col>
       <v-col>
-        <span style="color: white">{{this.statusDesconectado}}</span>
-        <span style="color: white">Desconectado</span>
+        <span style="color: white" class="mr-2">{{this.statusDesconectado}}</span>
+        <span style="color: white" class="mr-2">Desconectado</span>
         <v-progress-linear
           color="grey darken-1"
           v-model="statusDesconectado"
