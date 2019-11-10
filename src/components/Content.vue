@@ -2,8 +2,24 @@
 <template>
   <div style="width: 100%" class="d-inline-flex">
     <div class="grey darken-1" style="width: 15%">
-      <v-row>
-        <v-col></v-col>
+      <v-text-field
+        label="Buscar"
+        dark
+        solo-inverted
+        flat
+        prepend-inner-icon="mdi-magnify"
+        class="mx-1"
+      ></v-text-field>
+      <v-row v-for="contact in contacts" :key="contact.name" class="ml-1">
+        <v-col>
+          <span style="color: white" class="mr-2">{{ contact.name }}</span>
+          <v-progress-linear
+            background-color="green darken-1"
+            class="d-inline-flex"
+            style="width: 80%"
+          ></v-progress-linear>
+          <v-icon class="d-inline-flex mx-1">{{ contact.icon }}</v-icon>
+        </v-col>
       </v-row>
     </div>
     <div class="grey darken-3" style="width: 85%">
@@ -16,7 +32,9 @@
 
         <v-row class="my-3 mx-3">
           <v-col>
-            <span style="color: white" class="mr-2">{{this.statusDisponivel}}</span>
+            <span style="color: white" class="mr-2">{{
+              this.statusDisponivel
+            }}</span>
             <span style="color: white" class="mr-2">Disponível</span>
             <v-progress-linear
               color="green lighten-1"
@@ -25,7 +43,9 @@
             ></v-progress-linear>
           </v-col>
           <v-col>
-            <span style="color: white" class="mr-2">{{this.statusAtendendo}}</span>
+            <span style="color: white" class="mr-2">{{
+              this.statusAtendendo
+            }}</span>
             <span style="color: white" class="mr-2">Atendendo</span>
             <v-progress-linear
               color="red lighten-1"
@@ -34,7 +54,9 @@
             ></v-progress-linear>
           </v-col>
           <v-col>
-            <span style="color: white" class="mr-2">{{this.statusPausa}}</span>
+            <span style="color: white" class="mr-2">{{
+              this.statusPausa
+            }}</span>
             <span style="color: white" class="mr-2">Pausa</span>
             <v-progress-linear
               color="yellow lighten-1"
@@ -43,7 +65,9 @@
             ></v-progress-linear>
           </v-col>
           <v-col>
-            <span style="color: white" class="mr-2">{{this.statusDesconectado}}</span>
+            <span style="color: white" class="mr-2">{{
+              this.statusDesconectado
+            }}</span>
             <span style="color: white" class="mr-2">Desconectado</span>
             <v-progress-linear
               color="grey lighten-1"
@@ -97,6 +121,14 @@ export default {
         { text: "Status", value: "status" },
         { text: "Tempo", value: "time" },
         { text: "Qtde", value: "quantidade" }
+      ],
+      contacts: [
+        { name: "FileForTest", icon: "mdi-whatsapp" },
+        { name: "QueueSemQualificar", icon: "mdi-whatsapp" },
+        { name: "FIleWhats", icon: "mdi-whatsapp" },
+        { name: "dasdas", icon: "mdi-message-text-outline" },
+        { name: "UesleiQueue", icon: "mdi-message-text-outline" },
+        { name: "VozFila", icon: "mdi-phone-outline" }
       ]
     };
   },
